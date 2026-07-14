@@ -4,126 +4,219 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>매드스탬프 글씨체 쇼케이스 — 상세페이지</title>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=Noto+Serif+KR:wght@500;700;900&family=Nanum+Myeongjo:wght@400;700;800&family=Gowun+Batang:wght@400;700&display=swap" rel="stylesheet">
 <style>
-  *{margin:0;padding:0;box-sizing:border-box}
-  body{background:#E8DFD3;font-family:'Noto Sans KR',sans-serif;color:#2D2A26;display:flex;justify-content:center}
-  .page{width:800px;background:#F5F0E8;overflow:hidden;box-shadow:0 0 40px rgba(0,0,0,.1)}
-  .sec{padding:50px 40px}
-  .sec+.sec{border-top:2px solid #E8DFD3}
-  .hero{background:linear-gradient(135deg,#F5F0E8,#EDE4D6);text-align:center;padding:60px 40px}
-  .badge{display:inline-block;background:#C8332E;color:#fff;font-size:13px;font-weight:700;padding:6px 16px;border-radius:20px;margin-bottom:18px}
-  .hero h1{font-size:34px;font-weight:900;line-height:1.4;letter-spacing:-1px}
-  .hero h1 .ac{color:#C8332E}
-  .hero p{font-size:16px;color:#8B7355;margin-top:14px;line-height:1.6}
-  .stitle{font-size:24px;font-weight:900;margin-bottom:6px}
-  .stitle .n{display:inline-block;width:30px;height:30px;background:#C8332E;color:#fff;border-radius:50%;text-align:center;line-height:30px;font-size:15px;margin-right:8px}
-  .ssub{font-size:14px;color:#8B7355;margin-bottom:24px}
-  .font-guide-wrap{background:#fff;border-radius:16px;padding:20px;border:1px solid #E8DFD3;text-align:center}
-  .font-guide-wrap img{max-width:100%;border-radius:8px;display:block;margin:0 auto}
-  .font-guide-note{font-size:12px;color:#A0937D;margin-top:12px;line-height:1.5}
-  .con-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px 10px}
-  .con-item{text-align:center}
-  .con-stamp{display:inline-flex;align-items:center;justify-content:center;width:60px;height:60px;border-radius:50%;background:#C8332E;color:#F5F0E8;font-weight:900;font-size:16px;line-height:1.1;box-shadow:inset 0 0 6px rgba(120,20,15,.3)}
-  .con-label{margin-top:6px;font-size:17px;font-weight:900;color:#8B7355}
-  .con-name{font-size:11px;color:#A0937D}
-  .con-item.dbl .con-stamp{background:#9B6FA8}
-  .con-item.dbl .con-label{color:#7B68A8}
-  .gallery-box{background:#EFE8DC;border-radius:16px;padding:30px 24px}
-  .legend{display:flex;gap:20px;justify-content:center;margin-top:18px;font-size:12px;color:#8B7355}
-  .legend span{display:flex;align-items:center;gap:5px}
-  .ldot{width:10px;height:10px;border-radius:50%}
-  .app-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-  .app-box{background:#fff;border-radius:14px;padding:20px;border:1px solid #E8DFD3}
-  .app-box h4{font-size:14px;font-weight:700;margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid #F0E8DC}
-  .guide-tbl{width:100%;border-collapse:collapse;margin-top:16px;font-size:13px}
-  .guide-tbl th{background:#E8DFD3;padding:8px;text-align:left;font-weight:700}
-  .guide-tbl td{padding:8px;border-bottom:1px solid #E8DFD3}
-  .guide-tbl td:first-child{font-weight:700;color:#C8332E}
-  .cta{background:#2D2A26;text-align:center;padding:44px 40px}
-  .cta h2{font-size:24px;font-weight:900;color:#F5F0E8;margin-bottom:10px}
-  .cta p{font-size:14px;color:#B0A595;margin-bottom:20px}
-  .cta-btn{display:inline-block;background:#C8332E;color:#fff;font-size:16px;font-weight:700;padding:12px 36px;border-radius:28px}
-  .cta-note{font-size:11px;color:#8B8070;margin-top:14px}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#E8DFD3;font-family:'Noto Sans KR',sans-serif;color:#2D2A26;display:flex;justify-content:center}
+.page{width:800px;background:#F5F0E8;overflow:hidden;box-shadow:0 0 40px rgba(0,0,0,.1)}
+.sec{padding:48px 40px}
+.sec+.sec{border-top:2px solid #E8DFD3}
+.hero{background:linear-gradient(135deg,#F5F0E8,#EDE4D6);text-align:center;padding:56px 40px}
+.badge{display:inline-block;background:#C8332E;color:#fff;font-size:12px;font-weight:700;padding:5px 14px;border-radius:18px;margin-bottom:16px;letter-spacing:1px}
+.hero h1{font-size:32px;font-weight:900;line-height:1.4;letter-spacing:-1px}
+.hero h1 .ac{color:#C8332E}
+.hero p{font-size:15px;color:#8B7355;margin-top:12px;line-height:1.6}
+.stitle{font-size:22px;font-weight:900;margin-bottom:4px}
+.stitle .n{display:inline-block;width:28px;height:28px;background:#C8332E;color:#fff;border-radius:50%;text-align:center;line-height:28px;font-size:14px;margin-right:8px;vertical-align:middle}
+.ssub{font-size:13px;color:#8B7355;margin-bottom:22px;line-height:1.5}
+/* 도장 스탬프 */
+.stamp{display:inline-flex;align-items:center;justify-content:center;border-radius:50%;background:#C8332E;color:#F5F0E8;font-weight:900;line-height:1.05;position:relative;box-shadow:inset 0 0 6px rgba(120,20,15,.25);background-image:radial-gradient(circle at 30% 30%,rgba(255,255,255,.06) 0%,transparent 50%),radial-gradient(circle at 70% 70%,rgba(0,0,0,.08) 0%,transparent 40%)}
+.stamp::after{content:'';position:absolute;inset:0;border-radius:50%;box-shadow:inset 2px 2px 5px rgba(255,240,230,.12),inset -2px -2px 6px rgba(100,15,10,.2);pointer-events:none}
+.stamp.s1{width:52px;height:52px;font-size:22px}       /* 1글자 */
+.stamp.s2{width:60px;height:60px;font-size:20px}       /* 2글자 가로 */
+.stamp.s2v{width:56px;height:64px;font-size:19px;flex-direction:column;gap:1px} /* 2글자 세로 */
+.stamp.s3h{width:82px;height:56px;border-radius:40px;font-size:18px;gap:2px;padding:0 8px} /* 3글자 가로(타원) */
+.stamp.s3v{width:56px;height:82px;border-radius:40px;font-size:18px;flex-direction:column;gap:1px;padding:8px 0} /* 3글자 세로 */
+.stamp.s4{width:74px;height:74px;font-size:15px;gap:2px} /* 4글자 2x2 */
+.font-guide-wrap{background:#fff;border-radius:14px;padding:16px;border:1px solid #E8DFD3;text-align:center}
+.font-guide-wrap img{max-width:100%;border-radius:8px;display:block;margin:0 auto}
+.font-guide-note{font-size:11px;color:#A0937D;margin-top:10px;line-height:1.5}
+/* 글자수 그리드 */
+.len-grid{display:grid;grid-template-columns:1fr;gap:18px}
+.len-row{background:#fff;border-radius:14px;padding:20px;border:1px solid #E8DFD3}
+.len-row h4{font-size:15px;font-weight:900;color:#2D2A26;margin-bottom:4px}
+.len-row .ldesc{font-size:12px;color:#A0937D;margin-bottom:14px}
+.len-stamps{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.len-stamps .si{display:flex;flex-direction:column;align-items:center;gap:5px}
+.len-stamps .sl{font-size:11px;color:#8B7355;font-weight:500}
+/* 자음모음 표 */
+.cm-tbl{width:100%;border-collapse:collapse;margin-top:6px;font-size:12px}
+.cm-tbl th{background:#E8DFD3;padding:8px 6px;font-weight:700;text-align:center;font-size:11px}
+.cm-tbl td{padding:8px 6px;border-bottom:1px solid #F0E8DC;text-align:center}
+.cm-tbl td:first-child{font-weight:700;color:#C8332E;font-size:13px}
+.guide-tbl{width:100%;border-collapse:collapse;margin-top:14px;font-size:12px}
+.guide-tbl th{background:#E8DFD3;padding:8px;text-align:left;font-weight:700}
+.guide-tbl td{padding:8px;border-bottom:1px solid #E8DFD3}
+.guide-tbl td:first-child{font-weight:700;color:#C8332E}
+.cta{background:#2D2A26;text-align:center;padding:40px 40px}
+.cta h2{font-size:22px;font-weight:900;color:#F5F0E8;margin-bottom:8px}
+.cta p{font-size:13px;color:#B0A595;margin-bottom:18px}
+.cta-btn{display:inline-block;background:#C8332E;color:#fff;font-size:15px;font-weight:700;padding:11px 32px;border-radius:26px}
+.cta-note{font-size:10px;color:#8B8070;margin-top:12px}
 </style>
 </head>
 <body>
 <div class="page">
+
+  <!-- HERO -->
   <div class="hero">
-    <div class="badge">FONTS × CONSONANTS</div>
-    <h1>실제 도장 서체로 보는<br><span class="ac">글씨체 가이드</span></h1>
-    <p>전서체·고인체·용봉체 — 실제 인각 폰트 외관 그대로.<br>어떤 자음이든 이렇게 찍힙니다.</p>
+    <div class="badge">TYPEFACE GUIDE</div>
+    <h1>실제 도장 서체로 보는<br><span class="ac">글자수별 · 자음모음 가이드</span></h1>
+    <p>1글자 성씨부터 4글자 직함까지, 가로·세로 모든 배치.<br>어떤 자음·모음 조합이든 이렇게 찍힙니다.</p>
   </div>
 
+  <!-- SECTION 1: 실제 서체 이미지 -->
   <div class="sec">
-    <div class="stitle"><span class="n">1</span>실제 서체 안내 (원본 이미지)</div>
-    <div class="ssub">현재 상세페이지에 적용 중인 실제 도장 폰트 이미지. CSS 근사치 아님, 100% 실제 인각 외관.</div>
+    <div class="stitle"><span class="n">1</span>실제 서체 안내 (원본)</div>
+    <div class="ssub">전서체·고인체·용봉체 — 실제 인각 폰트 외관 100%</div>
     <div class="font-guide-wrap">
-      <img src="real_seoche_guide_FULL.jpg" alt="서체 특성에 관한 안내 - 전서체 고인체 용봉체 실제 도장 폰트">
-      <div class="font-guide-note">↑ 실제 매드스탬프 도장 서체 안내 이미지 (전서체·고인체·용봉체)<br>이 이미지가 폰트 외관의 100% 기준입니다.</div>
+      <img src="real_seoche_guide_FULL.jpg" alt="서체 특성 안내">
+      <div class="font-guide-note">↑ 실제 매드스탬프 도장 서체 안내 이미지 (전서체·고인체·용봉체)</div>
     </div>
   </div>
 
+  <!-- SECTION 2: 글자수별 배치 -->
   <div class="sec">
-    <div class="stitle"><span class="n">2</span>자음 갤러리</div>
-    <div class="ssub">기본 14자음 + 쌍자음 5 = 한글 전체 자음. 어떤 이름이든 예쁘게 찍힙니다.</div>
-    <div class="gallery-box">
-      <div class="con-grid">
-        <div class="con-item"><div class="con-stamp">강유</div><div class="con-label">ㄱ</div><div class="con-name">강유</div></div>
-        <div class="con-item"><div class="con-stamp">노아</div><div class="con-label">ㄴ</div><div class="con-name">노아</div></div>
-        <div class="con-item"><div class="con-stamp">도윤</div><div class="con-label">ㄷ</div><div class="con-name">도윤</div></div>
-        <div class="con-item"><div class="con-stamp">라온</div><div class="con-label">ㄹ</div><div class="con-name">라온</div></div>
-        <div class="con-item"><div class="con-stamp">민준</div><div class="con-label">ㅁ</div><div class="con-name">민준</div></div>
-        <div class="con-item"><div class="con-stamp">박서</div><div class="con-label">ㅂ</div><div class="con-name">박서</div></div>
-        <div class="con-item"><div class="con-stamp">서연</div><div class="con-label">ㅅ</div><div class="con-name">서연</div></div>
-        <div class="con-item"><div class="con-stamp">이도</div><div class="con-label">ㅇ</div><div class="con-name">이도</div></div>
-        <div class="con-item"><div class="con-stamp">주원</div><div class="con-label">ㅈ</div><div class="con-name">주원</div></div>
-        <div class="con-item"><div class="con-stamp">최은</div><div class="con-label">ㅊ</div><div class="con-name">최은</div></div>
-        <div class="con-item"><div class="con-stamp">카이</div><div class="con-label">ㅋ</div><div class="con-name">카이</div></div>
-        <div class="con-item"><div class="con-stamp">태민</div><div class="con-label">ㅌ</div><div class="con-name">태민</div></div>
-        <div class="con-item"><div class="con-stamp">펭수</div><div class="con-label">ㅍ</div><div class="con-name">펭수</div></div>
-        <div class="con-item"><div class="con-stamp">하준</div><div class="con-label">ㅎ</div><div class="con-name">하준</div></div>
-        <div></div>
-        <div class="con-item dbl"><div class="con-stamp">꼬마</div><div class="con-label">ㄲ</div><div class="con-name">꼬마</div></div>
-        <div class="con-item dbl"><div class="con-stamp">또요</div><div class="con-label">ㄸ</div><div class="con-name">또요</div></div>
-        <div class="con-item dbl"><div class="con-stamp">뽀요</div><div class="con-label">ㅃ</div><div class="con-name">뽀요</div></div>
-        <div class="con-item dbl"><div class="con-stamp">쑥</div><div class="con-label">ㅆ</div><div class="con-name">쑥</div></div>
-        <div class="con-item dbl"><div class="con-stamp">찌노</div><div class="con-label">ㅉ</div><div class="con-name">찌노</div></div>
+    <div class="stitle"><span class="n">2</span>글자수별 도장 배치</div>
+    <div class="ssub">1글자 성씨 · 2글자 이름 · 3글자 가로/세로 · 4글자 직함 — 모든 형태를 한눈에</div>
+    <div class="len-grid">
+
+      <!-- 1글자 -->
+      <div class="len-row">
+        <h4>1글자 (성씨 도장)</h4>
+        <div class="ldesc">작은 면에 성씨 한 글자만 넣는 도장</div>
+        <div class="len-stamps">
+          <div class="si"><div class="stamp s1">김</div><div class="sl">김</div></div>
+          <div class="si"><div class="stamp s1">이</div><div class="sl">이</div></div>
+          <div class="si"><div class="stamp s1">박</div><div class="sl">박</div></div>
+          <div class="si"><div class="stamp s1">최</div><div class="sl">최</div></div>
+          <div class="si"><div class="stamp s1">강</div><div class="sl">강</div></div>
+          <div class="si"><div class="stamp s1">윤</div><div class="sl">윤</div></div>
+          <div class="si"><div class="stamp s1">장</div><div class="sl">장</div></div>
+          <div class="si"><div class="stamp s1">임</div><div class="sl">임</div></div>
+          <div class="si"><div class="stamp s1">조</div><div class="sl">조</div></div>
+          <div class="si"><div class="stamp s1">한</div><div class="sl">한</div></div>
+          <div class="si"><div class="stamp s1">황</div><div class="sl">황</div></div>
+          <div class="si"><div class="stamp s1">남</div><div class="sl">남</div></div>
+        </div>
       </div>
-      <div class="legend">
-        <span><div class="ldot" style="background:#C8332E"></div>기본 14자음</span>
-        <span><div class="ldot" style="background:#9B6FA8"></div>쌍자음 5</span>
+
+      <!-- 2글자 -->
+      <div class="len-row">
+        <h4>2글자 (이름 도장)</h4>
+        <div class="ldesc">이름 두 글자 — 다양한 자음·모음 조합</div>
+        <div class="len-stamps">
+          <div class="si"><div class="stamp s2">강유</div><div class="sl">ㄱㅇ ㅏㅠ</div></div>
+          <div class="si"><div class="stamp s2">노아</div><div class="sl">ㄴㅇ ㅗㅏ</div></div>
+          <div class="si"><div class="stamp s2">도윤</div><div class="sl">ㄷㅇ ㅗㅠ</div></div>
+          <div class="si"><div class="stamp s2">라온</div><div class="sl">ㄹㅇ ㅏㅗ</div></div>
+          <div class="si"><div class="stamp s2">민준</div><div class="sl">ㅁㅈ ㅣㅜ</div></div>
+          <div class="si"><div class="stamp s2">박서</div><div class="sl">ㅂㅅ ㅏㅓ</div></div>
+          <div class="si"><div class="stamp s2">서연</div><div class="sl">ㅅㅇ ㅓㅕ</div></div>
+          <div class="si"><div class="stamp s2">주원</div><div class="sl">ㅈㅇ ㅜㅝ</div></div>
+          <div class="si"><div class="stamp s2">최은</div><div class="sl">ㅊㅇ ㅗㅡ</div></div>
+          <div class="si"><div class="stamp s2">카이</div><div class="sl">ㅋㅇ ㅏㅣ</div></div>
+          <div class="si"><div class="stamp s2">태민</div><div class="sl">ㅌㅁ ㅐㅣ</div></div>
+          <div class="si"><div class="stamp s2">펭수</div><div class="sl">ㅍㅅ ㅐㅜ</div></div>
+          <div class="si"><div class="stamp s2">하준</div><div class="sl">ㅎㅈ ㅏㅜ</div></div>
+        </div>
       </div>
+
+      <!-- 3글자 가로 -->
+      <div class="len-row">
+        <h4>3글자 가로 배치 ★</h4>
+        <div class="ldesc">이름이나 단어를 가로로 나열 — 자음과 모음이 다양하게 조합된 3글자</div>
+        <div class="len-stamps">
+          <div class="si"><div class="stamp s3h">도레미</div><div class="sl">ㄷㄹㅁ ㅗㅔㅣ</div></div>
+          <div class="si"><div class="stamp s3h">아리랑</div><div class="sl">ㅇㄹㄹ ㅏㅣㅏ</div></div>
+          <div class="si"><div class="stamp s3h">새벽달</div><div class="sl">ㅅㅂㄷ ㅐㅕㅏ</div></div>
+          <div class="si"><div class="stamp s3h">강민아</div><div class="sl">ㄱㅁㅇ ㅏㅣㅏ</div></div>
+          <div class="si"><div class="stamp s3h">노을빛</div><div class="sl">ㄴㅇㅂ ㅗㅡㅣ</div></div>
+          <div class="si"><div class="stamp s3h">박서연</div><div class="sl">ㅂㅅㅇ ㅏㅓㅕ</div></div>
+          <div class="si"><div class="stamp s3h">이주원</div><div class="sl">ㅇㅈㅇ ㅣㅜㅝ</div></div>
+          <div class="si"><div class="stamp s3h">자몽향</div><div class="sl">ㅈㅁㅎ ㅏㅗㅑ</div></div>
+          <div class="si"><div class="stamp s3h">차임종</div><div class="sl">ㅊㅇㅈ ㅏㅣㅗ</div></div>
+          <div class="si"><div class="stamp s3h">태양빛</div><div class="sl">ㅌㅇㅂ ㅐㅑㅣ</div></div>
+          <div class="si"><div class="stamp s3h">푸른산</div><div class="sl">ㅍㄹㅅ ㅜㅡㅏ</div></div>
+          <div class="si"><div class="stamp s3h">하늘별</div><div class="sl">ㅎㄴㅂ ㅏㅡㅕ</div></div>
+        </div>
+      </div>
+
+      <!-- 3글자 세로 -->
+      <div class="len-row">
+        <h4>3글자 세로 배치</h4>
+        <div class="ldesc">전통적인 세로 도장 배열 — 성명 3글자를 위아래로</div>
+        <div class="len-stamps">
+          <div class="si"><div class="stamp s3v">강유리</div><div class="sl">ㄱㅇㄹ</div></div>
+          <div class="si"><div class="stamp s3v">노도현</div><div class="sl">ㄴㄷㅎ</div></div>
+          <div class="si"><div class="stamp s3v">박서연</div><div class="sl">ㅂㅅㅇ</div></div>
+          <div class="si"><div class="stamp s3v">이주원</div><div class="sl">ㅇㅈㅇ</div></div>
+          <div class="si"><div class="stamp s3v">최태민</div><div class="sl">ㅊㅌㅁ</div></div>
+        </div>
+      </div>
+
+      <!-- 4글자 -->
+      <div class="len-row">
+        <h4>4글자 (직함 · 긴 이름)</h4>
+        <div class="ldesc">법인 직인이나 4글자 이름 — 2×2 또는 가로 배열</div>
+        <div class="len-stamps">
+          <div class="si"><div class="stamp s4">대표이사</div><div class="sl">직함</div></div>
+          <div class="si"><div class="stamp s4">감사합니다</div><div class="sl">단어</div></div>
+          <div class="si"><div class="stamp s4">강민서윤</div><div class="sl">이름</div></div>
+          <div class="si"><div class="stamp s4">행복하세요</div><div class="sl">인사</div></div>
+        </div>
+      </div>
+
     </div>
   </div>
 
+  <!-- SECTION 3: 자음·모음 커버리지 -->
   <div class="sec">
-    <div class="stitle"><span class="n">3</span>서체 선택 가이드</div>
-    <div class="ssub">용도에 맞는 서체를 쉽게 선택하세요.</div>
+    <div class="stitle"><span class="n">3</span>자음·모음 커버리지</div>
+    <div class="ssub">14 기본자음 + 5 쌍자음 + 주요 모음 조합 — 위 도장 샘플들로 모두 커버</div>
+    <table class="cm-tbl">
+      <tr><th>자음</th><th>도장 샘플</th><th>모음</th><th>도장 샘플</th></tr>
+      <tr><td>ㄱ</td><td>강유, 강민아</td><td>ㅏ</td><td>강, 아리랑</td></tr>
+      <tr><td>ㄴ</td><td>노아, 노을빛</td><td>ㅑ</td><td>태양빛(양)</td></tr>
+      <tr><td>ㄷ</td><td>도윤, 도레미</td><td>ㅓ</td><td>박서, 서연</td></tr>
+      <tr><td>ㄹ</td><td>라온, 아리랑</td><td>ㅕ</td><td>서연, 새벽달</td></tr>
+      <tr><td>ㅁ</td><td>민준, 자몽향</td><td>ㅗ</td><td>노아, 도윤</td></tr>
+      <tr><td>ㅂ</td><td>박서, 새벽달</td><td>ㅛ</td><td>자몽향(향)</td></tr>
+      <tr><td>ㅅ</td><td>서연, 푸른산</td><td>ㅜ</td><td>도윤, 주원</td></tr>
+      <tr><td>ㅇ</td><td>이도, 아리랑</td><td>ㅠ</td><td>강유(유)</td></tr>
+      <tr><td>ㅈ</td><td>주원, 자몽향</td><td>ㅡ</td><td>최은, 노을빛</td></tr>
+      <tr><td>ㅊ</td><td>최은, 차임종</td><td>ㅣ</td><td>카이, 도레미</td></tr>
+      <tr><td>ㅋ</td><td>카이</td><td>ㅐ</td><td>태민, 새벽달</td></tr>
+      <tr><td>ㅌ</td><td>태민, 태양빛</td><td>ㅔ</td><td>도레미(레)</td></tr>
+      <tr><td>ㅍ</td><td>펭수, 푸른산</td><td>ㅝ</td><td>주원(원)</td></tr>
+      <tr><td>ㅎ</td><td>하준, 하늘별</td><td>ㅢ</td><td>—</td></tr>
+      <tr><td>ㄲ</td><td>꼬마</td><td></td><td></td></tr>
+      <tr><td>ㄸ</td><td>또요</td><td></td><td></td></tr>
+      <tr><td>ㅃ</td><td>뽀요</td><td></td><td></td></tr>
+      <tr><td>ㅆ</td><td>쑥</td><td></td><td></td></tr>
+      <tr><td>ㅉ</td><td>찌노</td><td></td><td></td></tr>
+    </table>
+  </div>
+
+  <!-- SECTION 4: 서체 가이드 -->
+  <div class="sec">
+    <div class="stitle"><span class="n">4</span>서체 선택 가이드</div>
     <table class="guide-tbl">
       <tr><th>서체</th><th>특징</th><th>추천 용도</th></tr>
       <tr><td>전서체</td><td>둥글고 곡선적, 고전 인장</td><td>인감·선물도장</td></tr>
       <tr><td>고인체</td><td>두껍고 정방형, 권위</td><td>인감·법인·개인이름</td></tr>
       <tr><td>용봉체</td><td>장식적, 독특한 필치</td><td>특수·선물·기념</td></tr>
     </table>
-    <div class="app-grid" style="margin-top:16px">
-      <div class="app-box">
-        <h4>직함 도장</h4>
-        <p style="font-size:13px;color:#5C5650;line-height:2">대표이사 · 사장 · 교사 · 원장</p>
-      </div>
-      <div class="app-box">
-        <h4>단어 도장</h4>
-        <p style="font-size:13px;color:#5C5650;line-height:2">행복 · 사랑 · 감사 · 응원</p>
-      </div>
-    </div>
   </div>
 
+  <!-- CTA -->
   <div class="cta">
-    <h2>원하는 글씨체를 선택하세요</h2>
-    <p>실제 도장 서체로 제작됩니다. 주문 시 서체 선택에서 고르실 수 있습니다.</p>
+    <h2>원하는 글자수와 서체를 선택하세요</h2>
+    <p>1글자~4글자, 가로·세로 모두 가능. 실제 도장 서체로 제작됩니다.</p>
     <div class="cta-btn">주문하러 가기 →</div>
-    <div class="cta-note">※ 자음 갤러리의 도장 이미지는 레이아웃 시안용이며, 실제 도장은 위 서체 안내 이미지의 인각 폰트로 제작됩니다.</div>
+    <div class="cta-note">※ 도장 이미지는 레이아웃 시안용이며, 실제 도장은 서체 안내 이미지의 인각 폰트로 제작됩니다.</div>
   </div>
+
 </div>
 </body>
 </html>
